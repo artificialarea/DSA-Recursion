@@ -1,6 +1,6 @@
 # Recursion exercises
 
-Data Structures & Algorithms, per: https://courses.thinkful.com/dsa-v1/checkpoint/2
+Data Structures & Algorithms, per: https://courses.thinkful.com/dsa-v1/checkpoint/2#assignment
 
 To run any of these scripts, in terminal command line enter: `node script-name.js`
 
@@ -17,7 +17,7 @@ Start each problem by understanding the problem and coming up with some sample i
 
 ## 00. sumOf
 
-file: **00. `sumOf.js`**
+**`sumOf.js`**
 
 ```
 const sumOf = (list) => {
@@ -31,6 +31,10 @@ const sumOf = (list) => {
 let lst = [2, 4, 6, 8, 10];
 console.log(sumOf(lst));
 ```
+
+## 1. Counting Sheep
+
+**`counting-sheep.js`**
 
 
 
