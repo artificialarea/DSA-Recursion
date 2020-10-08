@@ -1,12 +1,12 @@
 let countingSheep = (num) => {
-    // base case
+
     if (num === 0) {
-        console.log('All sheep jumped over the fence');
-        return;
+        return 'All sheep jumped over the fence';
     }
-    // general recursive case
-    console.log(`${num}: Another sheep jumps over the fence`)
-    countingSheep(num - 1);
+
+    let result = `${num}: Another sheep jumps over the fence\n`;
+    
+    return result + countingSheep(num - 1);
 };
 
-countingSheep(3);
+console.log(countingSheep(3));
