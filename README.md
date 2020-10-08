@@ -65,6 +65,23 @@ let powerCalculator = (intBase, intExponent) => {
 powerCalculator(2,8);
 ```
 
+## 3. Reverse String
+
+**`reverse-string.js`** see comments in file re: 'backward phase of recursion'...
+```
+const reverseString = (str) => {
+    if (str.length === 1) return str;
+
+    // Split first char and the remaining chars of string
+    const firstChar = str.charAt(0);
+    const restStr = str.slice(1);
+
+    // Concatinate the chars in reverse order
+    return reverseString(restStr) + firstChar;
+}
+
+reverseString('Hello World');
+```
 
 
 

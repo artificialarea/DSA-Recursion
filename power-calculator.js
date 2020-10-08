@@ -18,6 +18,26 @@ let powerCalculator = (intBase, intExponent) => {
 console.log(powerCalculator(2,8));
 
 
+/*
+// What is the input to the program?
+Two integers: a base and an exponent
+
+// What is the output of the program?
+Math.pow(intBase, intExponent)... but for whatever reason instead as a recursive algorithm instead.
+intExponent must be a postive integer too.
+
+// What is the input to each recursive call?
+fn(intBase, intExponent - 1)
+
+// What is the output of each recursive call?
+intBase * fn(intBase, intExponent - 1)
+
 // e.g.
-// powerCalculator(10, 2); // ==> 100 
-// powerCalculator(10, -2); // ==> 'exponent should be >= 0'
+input: powerCalculator(10, 2); 
+output: 100 
+
+input: powerCalculator(10, -2); 
+output: 'exponent should be >= 0'
+
+*/
+
