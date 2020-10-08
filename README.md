@@ -45,7 +45,24 @@ let countingSheep = (num) => {
     return result + countingSheep(num - 1);
 };
 
-console.log(countingSheep(3));
+countingSheep(3);
+```
+
+## 2. Power Calculator
+
+**`power-calculator.js`**
+```
+let powerCalculator = (intBase, intExponent) => {
+    if (intExponent < 0)
+        return `exponent should be a positive number, greater than or equal to zero`
+
+    if (intExponent === 0) 
+        return intBase;
+
+    return intBase * powerCalculator(intBase, intExponent - 1);
+};
+
+powerCalculator(2,8);
 ```
 
 
