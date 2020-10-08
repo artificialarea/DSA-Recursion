@@ -16,6 +16,8 @@ let powerCalculator = (intBase, intExponent) => {
 };
 
 console.log(powerCalculator(2,8));
+console.log(powerCalculator(2,-8));
+
 
 
 /*

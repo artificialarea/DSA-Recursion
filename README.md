@@ -15,11 +15,13 @@ For each of these exercises, without using any code, you are expected to identif
 
 Start each problem by understanding the problem and coming up with some sample input and output. In some of the drills we have provided sample inputs and outputs for your convenience.
 
+
+
 ## 00. sumOf
 
 **`sumOf.js`**
 
-```
+```js
 const sumOf = (list) => {
     // base case
     if (list.length === 1) 
@@ -30,12 +32,16 @@ const sumOf = (list) => {
 
 let lst = [2, 4, 6, 8, 10];
 console.log(sumOf(lst));
+// 30
 ```
+
+
 
 ## 1. Counting Sheep
 
 **`counting-sheep.js`**
-```
+
+```js
 let countingSheep = (num) => {
     if (num === 0) {
         return 'All sheep jumped over the fence';
@@ -46,12 +52,19 @@ let countingSheep = (num) => {
 };
 
 countingSheep(3);
+// 3: Another sheep jumps over the fence
+// 2: Another sheep jumps over the fence
+// 1: Another sheep jumps over the fence
+// All sheep jumped over the fence
 ```
+
+
 
 ## 2. Power Calculator
 
 **`power-calculator.js`**
-```
+
+```js
 let powerCalculator = (intBase, intExponent) => {
     if (intExponent < 0)
         return `exponent should be a positive number, greater than or equal to zero`
@@ -63,12 +76,18 @@ let powerCalculator = (intBase, intExponent) => {
 };
 
 powerCalculator(2,8);
+// 512
+powerCalculator(2,-8);
+// `exponent should be a positive number, greater than or equal to zero`
 ```
+
+
 
 ## 3. Reverse String
 
-**`reverse-string.js`** see comments in file re: 'backward phase of recursion'...
-```
+**`reverse-string.js`** _see comments in file re: 'backward phase of recursion'..._
+
+```js
 const reverseString = (str) => {
     if (str.length === 1) return str;
 
@@ -81,6 +100,30 @@ const reverseString = (str) => {
 }
 
 reverseString('Hello World');
+// dlroW olleH
+```
+
+
+
+## 4. nth Triangular Number
+
+**`nth-triangular-number.js`**
+```
+                          *
+            *           *    *
+*     |   *   *  |   *    *    *  |
+
+ 1st       2nd           3rd             nth?  
+ ```
+
+```js
+const nthTriNum = (n) => {   
+    if (n === 1) return n;
+    return nthTriNum(n - 1) + n;
+};
+
+nthTriNum(9);
+// 45
 ```
 
 
