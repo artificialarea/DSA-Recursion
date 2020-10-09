@@ -169,7 +169,22 @@ let str = 'taco/burritto/enchilada';
 console.log(stringSplitter(str, '/'));
 ```
 
+<br />
 
+## 6. Fibonacci
+
+**`fibonacci.js`**
+
+```js
+
+const fibonacci = (n) => { // index of the nth Fibonacci number
+    if (n < 2) return n;
+    return fibonacci(n-1) + fibonacci(n - 2);
+};
+
+fibonacci(10); // beyond the 40th Fibonacci number we are getting into BigInt territory and thus JS unable to compute quickly, if at all
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, ...
+```
 
 
 <br />
