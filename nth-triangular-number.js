@@ -5,7 +5,7 @@ const nthTriNum = (n) => {    //nth Equliateral Triangular Number
     return nthTriNum(n - 1) + n;
 };
 
-console.log(nthTriNum(9));
+console.log(nthTriNum(200));
 
 
 

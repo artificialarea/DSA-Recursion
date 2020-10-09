@@ -3,6 +3,8 @@ const sumOf = (list) => {
     if (list.length === 1) 
         return list[0];
     // general recursive case
+    console.log('list[0]: ',list[0]);
+    console.log('list.slide(1): ', list.slice(1))
     return list[0] + sumOf(list.slice(1));
 }
 

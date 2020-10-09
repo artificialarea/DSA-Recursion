@@ -16,6 +16,7 @@ For each of these exercises, without using any code, you are expected to identif
 Start each problem by understanding the problem and coming up with some sample input and output. In some of the drills we have provided sample inputs and outputs for your convenience.
 
 
+<br />
 
 ## 00. sumOf
 
@@ -36,6 +37,7 @@ console.log(sumOf(lst));
 ```
 
 
+<br />
 
 ## 1. Counting Sheep
 
@@ -59,6 +61,7 @@ countingSheep(3);
 ```
 
 
+<br />
 
 ## 2. Power Calculator
 
@@ -82,6 +85,7 @@ powerCalculator(2,-8);
 ```
 
 
+<br />
 
 ## 3. Reverse String
 
@@ -104,6 +108,7 @@ reverseString('Hello World');
 ```
 
 
+<br />
 
 ## 4. nth Triangular Number
 
@@ -127,6 +132,47 @@ nthTriNum(9);
 ```
 
 
+
+<br />
+
+## 5. String Splitter
+
+**`string-splitter.js`**
+
+```js
+const stringSplitter = (str, separator) => {
+
+    // base case
+    if (!str.includes(separator)) {
+        return [str];
+    }
+
+    const separatorIdx = str.indexOf(separator);
+    const splitStr = str.slice(0, separatorIdx);
+    const remainingStr = str.slice(separatorIdx + 1, str.length);
+
+    // We go all the way down to the base case to get the array 
+    // that we will use to contain all of our separated strings.
+    const arr = stringSplitter(remainingStr, separator);
+
+    // The reason this works is because the functions resolve in order during the backward phase. 
+    // That is to say, each function returns an array to the function that called it.
+    
+    arr.unshift(splitStr); // prepend (unshift) instead of append (push)
+
+    return arr;
+
+};
+
+let str = 'taco/burritto/enchilada';
+
+console.log(stringSplitter(str, '/'));
+```
+
+
+
+
+<br />
 
 ## Asides 
 
