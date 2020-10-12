@@ -41,7 +41,7 @@ console.log(sumOf(lst));
 
 ## 1. Counting Sheep
 
-**`counting-sheep.js`**
+**[`counting-sheep.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/counting-sheep.js)**
 
 ```js
 let countingSheep = (num) => {
@@ -65,7 +65,7 @@ countingSheep(3);
 
 ## 2. Power Calculator
 
-**`power-calculator.js`**
+**[`power-calculator.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/power-calculator.js)**
 
 ```js
 let powerCalculator = (intBase, intExponent) => {
@@ -89,7 +89,7 @@ powerCalculator(2,-8);
 
 ## 3. Reverse String
 
-**`reverse-string.js`** _see comments in file re: 'backward phase of recursion'..._
+**[`reverse-string.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/reverse-string.js)** _see comments in file re: 'backward phase of recursion'..._
 
 ```js
 const reverseString = (str) => {
@@ -112,7 +112,7 @@ reverseString('Hello World');
 
 ## 4. nth Triangular Number
 
-**`nth-triangular-number.js`**
+**[`nth-triangular-number.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/nth-triangular-number.js)**
 ```
                           *
             *           *    *
@@ -137,7 +137,7 @@ nthTriNum(9);
 
 ## 5. String Splitter
 
-**`string-splitter.js`**
+**[`string-splitter.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/string-splitter.js)**
 
 ```js
 const stringSplitter = (str, separator) => {
@@ -173,7 +173,7 @@ console.log(stringSplitter(str, '/'));
 
 ## 6. Fibonacci
 
-**`fibonacci.js`**
+**[`fibonacci.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/fibonacci.js)**
 
 ```js
 
@@ -193,7 +193,7 @@ fibonacci(10);
 
 ## 7. Factorial
 
-**`factorial.js`**
+**[`factorial.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/factorial.js)**
 
 ```js
 const factorial = (n) => {
@@ -208,7 +208,7 @@ factorial(5);
 
 ## 8. Find a way out of the maze
 
-**`maze-runner-v1.js`**
+**['`maze-runner-v1.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/maze-runner-v1.js)**
 
 ```js
 const recursiveMazeRunner = (maze, x = 0, y = 0) => {    // where x = column, y = row
@@ -277,7 +277,13 @@ recursiveMazeRunner(maze);
 
 
 
+<br />
 
+## 9. Find ALL the ways out of the maze
+
+**[`maze-runner-v2.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/maze-runner-v2.js)**
+
+> Incomplete. Sadly, I have no idea what I'm doing here... just following my mentor's lead.
 
 
 
