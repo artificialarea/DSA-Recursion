@@ -1,20 +1,27 @@
-const recursiveMazeRunnerAllRoutes = (originMaze, x = 0, y = 0, path = '') => {    // where x = column, y = row
+/* Marius says...
+Still working on this one! 
+I used a slightly different solution than before, setting up an object that represents all available moves and calling the function on each move.
+I think I'm close to a solution, but something isn't quite right yet
+*/
 
-    const maze = [...originMaze]
+
+const recursiveMazeRunnerAllRoutes = (originalMaze, x = 0, y = 0, path = '') => {    // where x = column, y = row
+
+    const maze = [...originalMaze]
     maze.forEach(row => console.log(JSON.stringify(row)));
     console.log(' ');
 
     // Set up the base case
     if (maze[y][x] === 'e') {
-        let result = `Path to exit: ${path}`;
+        let result = `PATH TO EXIT FOUND! ${path}`;
         console.log(result);
         return result;
     };
 
     // Void our current location so we don't backtrack
-    maze[y][x] = '@';
+    maze[y][x] = 'O';
 
-    const availabeMoves = {
+    const availableMoves = {
         up: {
             char: 'U',
             location: [x, y - 1],
@@ -35,21 +42,25 @@ const recursiveMazeRunnerAllRoutes = (originMaze, x = 0, y = 0, path = '') => { 
             location: [x + 1, y],
             contains: maze[y][x + 1] ? maze[y][x + 1] : '*',
         },
+        
     };
-    console.log(availabeMoves);
 
-
-    for (let prop in availabeMoves) {
-        let direction = availabeMoves[prop];
-        if (direction.contains !== '*' && direction.contains !== '@') {
+    for (let prop in availableMoves) {
+        let direction = availableMoves[prop];
+        if (direction.contains !== '*' && direction.contains !== 'O') {
             let newPath = path + direction.char;
+            
+            // log cirumstances at each point in the process
             console.log('Starting from x:', x, 'y:', y);
+            console.log(availableMoves);
+            console.log('newPath: ', newPath);
+
             recursiveMazeRunnerAllRoutes(
                 maze,
                 direction.location[0],
                 direction.location[1],
                 newPath
-            )
+            );
         }
     }
 
@@ -62,12 +73,6 @@ const recursiveMazeRunnerAllRoutes = (originMaze, x = 0, y = 0, path = '') => { 
 // '*' = wall
 // 'e' = exit/goal
 
-let smallMaze = [
-    [' ', ' ', ' '],
-    [' ', '*', ' '],
-    [' ', ' ', 'e']
-];
-
 let maze = [
     [' ', ' ', ' ', '*', ' ', ' ', ' '],
     ['*', '*', ' ', '*', ' ', '*', ' '],
@@ -76,12 +81,9 @@ let maze = [
     [' ', ' ', ' ', ' ', ' ', ' ', 'e']
 ];
 
-let mazeTrap = [
-    [' ', ' ', ' ', '*', ' ', ' ', ' '],
-    ['*', '*', ' ', '*', ' ', '*', ' '],
-    [' ', ' ', ' ', ' ', ' ', ' ', ' '],
-    ['*', '*', '*', '*', '*', '*', ' '],
-    [' ', ' ', ' ', ' ', ' ', ' ', 'e']
-];
-
 recursiveMazeRunnerAllRoutes(maze);
+
+// 3 Solutions for maze:
+// RRDDLLDDRRRRRR 
+// RRDDRRUURRDDDD 
+// RRDDRRRRDD

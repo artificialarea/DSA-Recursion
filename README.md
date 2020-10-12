@@ -289,6 +289,15 @@ recursiveMazeRunner(maze);
 
 <br />
 
+## 10. Anagrams
+
+**[`anagrams.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/anagrams.js)**
+
+
+
+
+<br />
+
 ## Asides 
 
 **`funfun.js`** countdown and making a tree, per: [Fun Fun Function video](https://www.youtube.com/watch?v=k7-N8R0-KY4&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=7)
