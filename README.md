@@ -298,6 +298,106 @@ recursiveMazeRunner(maze);
 
 <br />
 
+## 11. Org Chart
+
+**[`org-chart.js`](https://github.com/artificialarea/DSA-Recursion/blob/master/org-chart.js)**
+
+Kinda did it.
+
+My output was...
+```
+{
+    "Zuckerberg": {
+        "Schroepfer": {
+            "Bosworth": {
+                "Steve": {},
+                "Kyle": {},
+                "Andra": {}
+            },
+            "Zhao": {
+                "Richie": {},
+                "Sofia": {},
+                "Jen": {}
+            }
+        },
+        "Schrage": {
+            "VanDyck": {},
+            "Swain": {
+                "Blanch": {},
+                "Tom": {},
+                "Joe": {}
+            }
+        },
+        "Sandberg": {
+            "Goler": {
+                "Eddie": {},
+                "Julie": {},
+                "Annie": {}
+            },
+            "Hernandez": {
+                "Rowi": {},
+                "Inga": {},
+                "Morgan": {}
+            },
+            "Moissinac": {
+                "Amy": {},
+                "Chuck": {},
+                "Vinni": {}
+            },
+            "Kelley": {
+                "Eric": {},
+                "Ana": {},
+                "Wes": {}
+            }
+        }
+    }
+}
+```
+
+instead of...
+```
+Zuckerberg
+    Schroepfer
+        Bosworth
+            Steve
+            Kyle
+            Andra
+        Zhao
+            Richie
+            Sofia
+            Jen
+    Schrage
+        VanDyck
+            Sabrina
+            Michelle
+            Josh
+        Swain
+            Blanch
+            Tom
+            Joe
+    Sandberg
+        Goler
+            Eddie
+            Julie
+            Annie
+       Hernandez
+            Rowi
+            Inga
+            Morgan
+       Moissinac
+            Amy
+            Chuck
+            Vinni
+       Kelley
+            Eric
+            Ana
+            Wes
+```
+
+
+
+<br />
+
 ## Asides 
 
 **`funfun.js`** countdown and making a tree, per: [Fun Fun Function video](https://www.youtube.com/watch?v=k7-N8R0-KY4&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=7)
